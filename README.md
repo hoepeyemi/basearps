@@ -1,7 +1,9 @@
 Hi, The project has been deployed on solana for several years. Myself and my colleagues decided to revive it and deploy to base which was succesful.
 
 We were able to resolve the node-modules issues
+
 We changed the UI 
+
 We integrated thirdweb sdk and deployed three contracts on base sepolia. Below are the links
 
 
