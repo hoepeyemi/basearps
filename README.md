@@ -10,7 +10,8 @@ We integrated thirdweb sdk and deployed three contracts on base sepolia. Below a
 
 OLD VERSION: solarps.myappa.tech
 
-NEW VERSION: basearpsv2.netlify.app
+NEW VERSION: [basearpsv2.netlify.app](https://basearpsv2.vercel.app/)
+
 
 
 
