@@ -2,7 +2,14 @@ import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const Hero = () => {
+interface HeroProps {
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  ctaLink: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ title, subtitle, ctaText, ctaLink }) => {
   const navigate = useNavigate();
 
   return (

@@ -1,4 +1,11 @@
-export const Leaderboard = [
+export interface LeaderboardItem {
+  wallet: string;
+  name: string;
+  wins: number;
+  dt: string;
+}
+
+export const Leaderboard: LeaderboardItem[] = [
     {
         wallet: "0xb794f5ea0ba39494ce839613fffba74279579268",
         name: "India",
@@ -35,4 +42,5 @@ export const Leaderboard = [
         wins : 5250,
         dt: "2022-01-21"
     }
-]
+  // ... rest of the data
+];

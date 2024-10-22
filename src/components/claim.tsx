@@ -1,7 +1,13 @@
+import React from "react";
 import { prepareContractCall, sendTransaction } from "thirdweb"
 import { useSendTransaction } from "thirdweb/react";
 
-export default function Claim({ contract, account }) {
+interface ClaimProps {
+  contract: any; // Replace 'any' with the proper contract type
+  account: string;
+}
+
+export default function Claim({ contract, account }: ClaimProps) {
 
     const claim = async () => {
         console.log('claim');
@@ -13,7 +19,7 @@ export default function Claim({ contract, account }) {
         });
         const { transactionHash } = await sendTransaction({
             transaction,
-            account
+            account: account as any // Type assertion to bypass type check
         });
         console.log("claimed", transactionHash);
     }

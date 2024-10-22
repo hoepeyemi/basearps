@@ -14,6 +14,11 @@ import {
   SUPPORTED_TOKEN_INFO,
 } from "../config";
 
+interface SelectBetProps {
+  onSelectBet: (bet: string) => void;
+  disabled?: boolean;
+}
+
 const supportedTokenInfo = SUPPORTED_TOKEN_INFO;
 export default function SelectBet({ resetBetPrice, resetBetType }) {
   const [selectedTokenIndex, setSelectedTokenIndex] = useState(0);
@@ -94,7 +99,7 @@ export default function SelectBet({ resetBetPrice, resetBetType }) {
           }}
           value={selectedTokenIndex}
           onChange={(e) => {
-            setSelectedTokenIndex(e.target.value);
+            setSelectedTokenIndex(Number(e.target.value));
             setSelectedBetPrice(0);
           }}
         >
