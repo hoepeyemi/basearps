@@ -7,7 +7,7 @@ const wagmiConfig = createConfig({
   chains: [baseSepolia],
   connectors: [
     coinbaseWallet({
-      appName: 'onchainkit',
+      appName: 'solarps',
     }),
   ],
   ssr: true,

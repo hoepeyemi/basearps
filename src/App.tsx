@@ -11,7 +11,7 @@ import { ThirdwebProvider } from "thirdweb/react";
 import { createThirdwebClient } from "thirdweb";
 import React from "react";
 // import './globals.css';
-import { Provider } from './provider'; 
+import OnchainProviders from './OnchainProviders'; 
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
   
     return (
       <>
-            <Provider>
+            <OnchainProviders>
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
             </Routes>
           </Router>
           <ToastContainer autoClose={3000} draggableDirection="x" />
-        </Provider>
+        </OnchainProviders>
   
       </>
     );
