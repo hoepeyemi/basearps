@@ -47,100 +47,181 @@ const GameInfo: React.FC<GameInfoProps> = ({
         }}
       >
         Play Now
-      </button>
+        </button>
 
-      <br
-        style={{
-          color: "rgba(143, 143, 144, 0.14) 2px solid",
-          marginBottom: "2rem",
-          height: "2px",
-        }}
-      />
-    </div>
-
-    <div className="game">
-      <p className="game_title">What are the rules?
-      </p>
-      <p className="game_cont">
-      The rules are very simple and probably you remember them from your childhood:
-      </p>
-    <ul style={{
-      width: 'fit-content',
-      margin: '40px auto ',
-      fontSize: '18px',
-    }}>
-        <li>If you choose Rock, you will win against Scissors but lose against Paper.</li>
-        <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
-        <li>If you choose Paper, you will win against Rock but lose against Scissors.</li>
-      </ul>
-
-      <button
-        className="btn"
-        style={{
-          margin: "auto",
-        }}
-        onClick={() => {
-          navigate("/play");
-        }}
-      >
-        Play Now
-      </button>
-
-      <br
-        style={{
-          color: "rgba(143, 143, 144, 0.14) 2px solid",
-          marginBottom: "2rem",
-          height: "2px",
-        }}
-      />
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "90%",
-          maxWidth: "900px",
-          margin: "100px auto",
-        }}
-      >
-        <Box
-          sx={{
-            cursor: "pointer",
-            display: "flex",
-            "& img": {
-              margin: { xs: "auto 0px", sm: "auto 0px" },
-              height: { xs: "32px", sm: "32px", md: "32px" },
-            },
+        <br
+          style={{
+            color: "rgba(143, 143, 144, 0.14) 2px solid",
+            marginBottom: "2rem",
+            height: "2px",
           }}
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          <img alt="" src="./logo192.png" />
-          <Typography
-            sx={{
-              display: { xs: "none", sm: "flex" },
-              fontSize: { sm: "14px", md: "14px" },
-              fontWeight: "400",
-              margin: "auto 0.3rem",
-              color: "white",
-            }}
-          >
-            BASEARPS
-          </Typography>
-        </Box>
-        <p
+        />
+      </div>
+
+      <div className="game">
+        <p className="game_title">What are the rules?</p>
+        <p className="game_cont">
+          The rules are very simple and probably you remember them from your
+          childhood:
+        </p>
+        <ul
           style={{
             width: "fit-content",
-            fontSize: "14px",
+            margin: "40px auto ",
+            fontSize: "18px",
           }}
         >
-          Copyright © Basearps
+          <li>
+            If you choose Rock, you will win against Scissors but lose against
+            Paper.
+          </li>
+          <li>
+            If you choose Scissors, you will win against Paper but lose against
+            Rock.
+          </li>
+          <li>
+            If you choose Paper, you will win against Rock but lose against
+            Scissors.
+          </li>
+        </ul>
+
+        <button
+          className="btn"
+          style={{
+            margin: "auto",
+          }}
+          onClick={() => {
+            navigate("/play");
+          }}
+        >
+          Play Now
+        </button>
+
+        <br
+          style={{
+            color: "rgba(143, 143, 144, 0.14) 2px solid",
+            marginBottom: "2rem",
+            height: "2px",
+          }}
+        />
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "90%",
+            maxWidth: "900px",
+            margin: "100px auto",
+          }}
+        >
+          <Box
+            sx={{
+              cursor: "pointer",
+              display: "flex",
+              "& img": {
+                margin: { xs: "auto 0px", sm: "auto 0px" },
+                height: { xs: "32px", sm: "32px", md: "32px" },
+              },
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+
+          </Box>
+        </div>
+      </div>
+
+      <div className="game">
+        <p className="game_title">E-commerce for the needy</p>
+        <p className="game_cont">
+          Follow these steps:
         </p>
+        <ul
+          style={{
+            width: "fit-content",
+            margin: "40px auto ",
+            fontSize: "18px",
+          }}
+        >
+          <li>
+            Connect your wallet.
+          </li>
+          <li>
+            Choose token you want to bridge and network.
+          </li>
+          <li>
+            Choose the token and network you want the token to be.
+          </li>
+        </ul>
+
+        <button
+          className="btn"
+          style={{
+            margin: "auto",
+          }}
+          onClick={() => {
+            navigate("/google");
+          }}
+        >
+          Donate now!
+        </button>
+
+        <br
+          style={{
+            color: "rgba(143, 143, 144, 0.14) 2px solid",
+            marginBottom: "2rem",
+            height: "2px",
+          }}
+        />
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "90%",
+            maxWidth: "900px",
+            margin: "100px auto",
+          }}
+        >
+          <Box
+            sx={{
+              cursor: "pointer",
+              display: "flex",
+              "& img": {
+                margin: { xs: "auto 0px", sm: "auto 0px" },
+                height: { xs: "32px", sm: "32px", md: "32px" },
+              },
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            <img alt="" src="./logo192.png" />
+            <Typography
+              sx={{
+                display: { xs: "none", sm: "flex" },
+                fontSize: { sm: "14px", md: "14px" },
+                fontWeight: "400",
+                margin: "auto 0.3rem",
+                color: "white",
+              }}
+            >
+              Basearps
+            </Typography>
+          </Box>
+          <p
+            style={{
+              width: "fit-content",
+              fontSize: "14px",
+            }}
+          >
+            Copyright © Basearps
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default GameInfo;

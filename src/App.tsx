@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SnackbarProvider } from "notistack";
@@ -13,6 +13,17 @@ import React from "react";
 // import './globals.css';
 import OnchainProviders from './OnchainProviders'; 
 
+
+const GoogleRedirect = () => {
+  React.useEffect(() => {
+    window.open('https://basearpsveri.vercel.app', '_blank');
+    // Optionally navigate back to home page
+    window.location.href = '/';
+  }, []);
+  
+  return null; // or return a loading spinner if needed
+};
+
 function App() {
 
 
@@ -23,14 +34,15 @@ function App() {
     return (
       <>
             <OnchainProviders>
-          <Router>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/game" element={<Game />} />
-              <Route path="/play" element={<Play />} />
-              <Route path="/leaderboard" element={<Leaderboard />} />
-            </Routes>
-          </Router>
+            <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/game" element={<Game />} />
+            <Route path="/play" element={<Play />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/google" element={<GoogleRedirect />} />
+          </Routes>
+        </Router>
           <ToastContainer autoClose={3000} draggableDirection="x" />
         </OnchainProviders>
   
