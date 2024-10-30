@@ -254,7 +254,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
             navigate("/basepay");
           }}
         >
-          Help the needy!
+          Pay now!
         </button>
 
 
