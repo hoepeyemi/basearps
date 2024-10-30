@@ -221,6 +221,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
         <p className="game_title">Struggling with payment methods as a African?</p>
         <p className="game_cont">
           At Basearps, We built a platform where you can pay for goods and services with your local currency and across many currencies.
+          In Nigeria, We can call this Mobile POS.
         </p>
         {/* <ul
           style={{
