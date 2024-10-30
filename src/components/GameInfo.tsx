@@ -66,26 +66,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
           At Basearps, we believe in the power of giving. We are a community-driven platform that allows you to donate to verified needy people and organizations.
           That is why we have a Ecommerce section where you can donate to verified needy people and organizations.
         </p>
-        {/* <ul
-          style={{
-            width: "fit-content",
-            margin: "40px auto ",
-            fontSize: "18px",
-          }}
-        >
-          <li>
-            If you choose Rock, you will win against Scissors but lose against
-            Paper.
-          </li>
-          <li>
-            If you choose Scissors, you will win against Paper but lose against
-            Rock.
-          </li>
-          <li>
-            If you choose Paper, you will win against Rock but lose against
-            Scissors.
-          </li>
-        </ul> */}
+ 
 
         <button
           className="btn"
@@ -101,15 +82,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
         </button>
 
 
-        
-
-        {/* <br
-          style={{
-            color: "rgba(143, 143, 144, 0.14) 2px solid",
-            marginBottom: "2rem",
-            height: "2px",
-          }}
-        /> */}
+    
 
         <div
           style={{
@@ -144,26 +117,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
         <p className="game_cont">
           At Basearps, we built a platform where you can register your produce and land, and trade them with other farmers & traders.
         </p>
-        {/* <ul
-          style={{
-            width: "fit-content",
-            margin: "40px auto ",
-            fontSize: "18px",
-          }}
-        >
-          <li>
-            If you choose Rock, you will win against Scissors but lose against
-            Paper.
-          </li>
-          <li>
-            If you choose Scissors, you will win against Paper but lose against
-            Rock.
-          </li>
-          <li>
-            If you choose Paper, you will win against Rock but lose against
-            Scissors.
-          </li>
-        </ul> */}
+    
 
         <button
           className="btn"
@@ -178,16 +132,6 @@ const GameInfo: React.FC<GameInfoProps> = ({
           Own your yield!
         </button>
 
-
-        
-
-        {/* <br
-          style={{
-            color: "rgba(143, 143, 144, 0.14) 2px solid",
-            marginBottom: "2rem",
-            height: "2px",
-          }}
-        /> */}
 
         <div
           style={{
@@ -223,26 +167,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
           At Basearps, We built a platform where you can pay for goods and services with your local currency and across many currencies.
           In Nigeria, We can call this Mobile POS.
         </p>
-        {/* <ul
-          style={{
-            width: "fit-content",
-            margin: "40px auto ",
-            fontSize: "18px",
-          }}
-        >
-          <li>
-            If you choose Rock, you will win against Scissors but lose against
-            Paper.
-          </li>
-          <li>
-            If you choose Scissors, you will win against Paper but lose against
-            Rock.
-          </li>
-          <li>
-            If you choose Paper, you will win against Rock but lose against
-            Scissors.
-          </li>
-        </ul> */}
+   
 
         <button
           className="btn"
@@ -257,16 +182,6 @@ const GameInfo: React.FC<GameInfoProps> = ({
           Pay now!
         </button>
 
-
-        
-
-        {/* <br
-          style={{
-            color: "rgba(143, 143, 144, 0.14) 2px solid",
-            marginBottom: "2rem",
-            height: "2px",
-          }}
-        /> */}
 
         <div
           style={{
@@ -297,9 +212,7 @@ const GameInfo: React.FC<GameInfoProps> = ({
 
       <div className="game">
         <p className="game_title">DO you farm? Is your job related to trading of farm produce?</p>
-        {/* <p className="game_cont">
-          Follow these steps:
-        </p> */}
+     
         <ul
           style={{
             width: "fit-content",

@@ -10,42 +10,7 @@ import { QueryClientProvider, useQueryClient, useQuery } from "@tanstack/react-q
 import { http, WagmiProvider, createConfig } from 'wagmi';
 import { base } from 'wagmi/chains';
 import { mock } from 'wagmi/connectors';
-// import {
-//     ThirdwebProvider,
-//     ConnectButton,
-//     useActiveAccount,
-//   } from "thirdweb/react";
-//   import { base, baseSepolia, sepolia } from "thirdweb/chains";
-//   import {
-//     createWallet,
-//     walletConnect,
-//     inAppWallet,
-//   } from "thirdweb/wallets";
-//   import { createThirdwebClient, getAddress } from "thirdweb";
 
-
-
-  // const client = createThirdwebClient({
-  //   clientId: "c14e8f9ebdcdeb06a96aa80b0a07efe6",
-  // });
-
-
-  // const wallets = [
-  //   createWallet("io.metamask"),
-  //   createWallet("com.coinbase.wallet"),
-  //   walletConnect(),
-  //   inAppWallet({
-  //     auth: {
-  //       options: [
-  //         "email",
-  //         "google",
-  //         "apple",
-  //         "facebook",
-  //         "phone",
-  //       ],
-  //     },
-  //   }),
-  // ];
 
 interface NavbarProps {
   isConnected: boolean;
@@ -153,18 +118,7 @@ export default function Navbar({}) {
                 },
               }}
             >
-              {/* <ThirdwebProvider>
-                <ConnectButton
-                  client={client}
-                  wallets={wallets}
-                  accountAbstraction={{
-                    chain: baseSepolia,
-                    gasless: true,
-                  }}
-                  theme={"dark"}
-                  connectModal={{ size: "compact" }}
-                />
-              </ThirdwebProvider> */}
+         
                       <QueryClientProvider client={queryClient}>
 <WalletComponents />
 </QueryClientProvider>
@@ -175,16 +129,3 @@ export default function Navbar({}) {
       </>
     );
   }
-  
-
-  // const queryClient = new QueryClient();
-
-  // const renderWithProviders = (component: JSX.Element) => {
-  //   return render(
-  //     <WagmiProvider config={config}>
-  //       <QueryClientProvider client={queryClient}>
-  //         {component}
-  //       </QueryClientProvider>
-  //     </WagmiProvider>,
-  //   );
-  // };
