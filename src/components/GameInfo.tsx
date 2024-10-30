@@ -100,6 +100,165 @@ const GameInfo: React.FC<GameInfoProps> = ({
           Help the needy!
         </button>
 
+
+        
+
+        {/* <br
+          style={{
+            color: "rgba(143, 143, 144, 0.14) 2px solid",
+            marginBottom: "2rem",
+            height: "2px",
+          }}
+        /> */}
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "90%",
+            maxWidth: "900px",
+            margin: "100px auto",
+          }}
+        >
+          <Box
+            sx={{
+              cursor: "pointer",
+              display: "flex",
+              "& img": {
+                margin: { xs: "auto 0px", sm: "auto 0px" },
+                height: { xs: "32px", sm: "32px", md: "32px" },
+              },
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+
+          </Box>
+        </div>
+      </div>
+
+
+      <div className="game">
+        <p className="game_title">As a farmer, Are you struggling with gaining ownership of your produce and land?</p>
+        <p className="game_cont">
+          At Basearps, we built a platform where you can register your produce and land, and trade them with other farmers & traders.
+        </p>
+        {/* <ul
+          style={{
+            width: "fit-content",
+            margin: "40px auto ",
+            fontSize: "18px",
+          }}
+        >
+          <li>
+            If you choose Rock, you will win against Scissors but lose against
+            Paper.
+          </li>
+          <li>
+            If you choose Scissors, you will win against Paper but lose against
+            Rock.
+          </li>
+          <li>
+            If you choose Paper, you will win against Rock but lose against
+            Scissors.
+          </li>
+        </ul> */}
+
+        <button
+          className="btn"
+          style={{
+            margin: "auto",
+            color: "black",
+          }}
+          onClick={() => {
+            navigate("/yield");
+          }}
+        >
+          Own your yield!
+        </button>
+
+
+        
+
+        {/* <br
+          style={{
+            color: "rgba(143, 143, 144, 0.14) 2px solid",
+            marginBottom: "2rem",
+            height: "2px",
+          }}
+        /> */}
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "90%",
+            maxWidth: "900px",
+            margin: "100px auto",
+          }}
+        >
+          <Box
+            sx={{
+              cursor: "pointer",
+              display: "flex",
+              "& img": {
+                margin: { xs: "auto 0px", sm: "auto 0px" },
+                height: { xs: "32px", sm: "32px", md: "32px" },
+              },
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+
+          </Box>
+        </div>
+      </div>
+
+
+      <div className="game">
+        <p className="game_title">Struggling with payment methods as a African?</p>
+        <p className="game_cont">
+          At Basearps, We built a platform where you can pay for goods and services with your local currency and across many currencies.
+        </p>
+        {/* <ul
+          style={{
+            width: "fit-content",
+            margin: "40px auto ",
+            fontSize: "18px",
+          }}
+        >
+          <li>
+            If you choose Rock, you will win against Scissors but lose against
+            Paper.
+          </li>
+          <li>
+            If you choose Scissors, you will win against Paper but lose against
+            Rock.
+          </li>
+          <li>
+            If you choose Paper, you will win against Rock but lose against
+            Scissors.
+          </li>
+        </ul> */}
+
+        <button
+          className="btn"
+          style={{
+            margin: "auto",
+            color: "black",
+          }}
+          onClick={() => {
+            navigate("/basepay");
+          }}
+        >
+          Help the needy!
+        </button>
+
+
+        
+
         {/* <br
           style={{
             color: "rgba(143, 143, 144, 0.14) 2px solid",

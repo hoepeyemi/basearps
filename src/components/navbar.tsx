@@ -4,6 +4,12 @@ import { Box, Button, IconButton, Typography, AppBar, Toolbar } from "@mui/mater
 import { useNavigate } from "react-router-dom";
 import WalletComponents from "./walletComponents"
 import '@coinbase/onchainkit/styles.css'; 
+import OnchainProviders from "src/OnchainProviders";
+import { QueryClient } from "@tanstack/react-query";
+import { QueryClientProvider, useQueryClient, useQuery } from "@tanstack/react-query";
+import { http, WagmiProvider, createConfig } from 'wagmi';
+import { base } from 'wagmi/chains';
+import { mock } from 'wagmi/connectors';
 // import {
 //     ThirdwebProvider,
 //     ConnectButton,
@@ -48,7 +54,8 @@ interface NavbarProps {
   onDisconnect: () => void;
 }
 
-export default function Navbar({ }) {
+// const renderWithProviders = (component: JSX.Element) => {
+export default function Navbar({}) {
     const navigate = useNavigate();
     const [balance, setBalance] = useState(0);
     const [backButton, setBackButton] = useState(false);
@@ -61,6 +68,7 @@ export default function Navbar({ }) {
       if (location.pathname === "/play") setBackButton(true);
       else setBackButton(false);
     }, [location]);
+    const queryClient = new QueryClient();
   
   
     useEffect(() => {
@@ -157,7 +165,9 @@ export default function Navbar({ }) {
                   connectModal={{ size: "compact" }}
                 />
               </ThirdwebProvider> */}
+                      <QueryClientProvider client={queryClient}>
 <WalletComponents />
+</QueryClientProvider>
             </Box>
             
           </Box>
@@ -166,3 +176,15 @@ export default function Navbar({ }) {
     );
   }
   
+
+  // const queryClient = new QueryClient();
+
+  // const renderWithProviders = (component: JSX.Element) => {
+  //   return render(
+  //     <WagmiProvider config={config}>
+  //       <QueryClientProvider client={queryClient}>
+  //         {component}
+  //       </QueryClientProvider>
+  //     </WagmiProvider>,
+  //   );
+  // };

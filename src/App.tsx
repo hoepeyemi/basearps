@@ -14,6 +14,30 @@ import React from "react";
 import OnchainProviders from './OnchainProviders'; 
 
 
+
+const Basepay = () => {
+  React.useEffect(() => {
+    window.open('https://basepay.link/', '_blank');
+    // Optionally navigate back to home page
+    window.location.href = '/';
+  }, []);
+  
+  return null; // or return a loading spinner if needed
+};
+
+
+const Yield = () => {
+  React.useEffect(() => {
+    window.open('https://basearpsyield-wine.vercel.app/', '_blank');
+    // Optionally navigate back to home page
+    window.location.href = '/';
+  }, []);
+  
+  return null; // or return a loading spinner if needed
+};
+
+
+
 const BasearpsID = () => {
   React.useEffect(() => {
     window.open('https://basearpsid.vercel.app', '_blank');
@@ -48,10 +72,6 @@ const Basearpsagri = () => {
 
 function App() {
 
-
-    // const client = createThirdwebClient({
-    //   clientId: "c14e8f9ebdcdeb06a96aa80b0a07efe6",
-    // })
   
     return (
       <>
@@ -65,6 +85,8 @@ function App() {
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/verify" element={<BasearpsID />} />
             <Route path="/basearpsagri" element={<Basearpsagri />} />
+            <Route path="/yield" element={<Yield />} />
+            <Route path="/basepay" element={<Basepay />} />
           </Routes>
         </Router>
           <ToastContainer autoClose={3000} draggableDirection="x" />
@@ -75,21 +97,3 @@ function App() {
   }
   
   export default App;
-  
-
-
-
- 
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body>
-//         <Providers>{children}</Providers>
-//       </body>
-//     </html>
-//   );
-// }
