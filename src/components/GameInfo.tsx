@@ -97,16 +97,16 @@ const GameInfo: React.FC<GameInfoProps> = ({
             navigate("/needy");
           }}
         >
-          Play Now
+          Help the needy!
         </button>
 
-        <br
+        {/* <br
           style={{
             color: "rgba(143, 143, 144, 0.14) 2px solid",
             marginBottom: "2rem",
             height: "2px",
           }}
-        />
+        /> */}
 
         <div
           style={{
@@ -136,10 +136,10 @@ const GameInfo: React.FC<GameInfoProps> = ({
       </div>
 
       <div className="game">
-        <p className="game_title">E-commerce for the needy</p>
-        <p className="game_cont">
+        <p className="game_title">DO you farm? Is your job related to trading of farm produce?</p>
+        {/* <p className="game_cont">
           Follow these steps:
-        </p>
+        </p> */}
         <ul
           style={{
             width: "fit-content",
@@ -148,13 +148,13 @@ const GameInfo: React.FC<GameInfoProps> = ({
           }}
         >
           <li>
-            Connect your wallet.
+            Connect your wallet and registeryour profile.
           </li>
           <li>
-            Choose token you want to bridge and network.
+            Post your produce for sale.
           </li>
           <li>
-            Choose the token and network you want the token to be.
+            Trade your produce.
           </li>
         </ul>
 
@@ -165,10 +165,10 @@ const GameInfo: React.FC<GameInfoProps> = ({
             color: "black",
           }}
           onClick={() => {
-            navigate("/basearpsveri");
+            navigate("/basearpsagri");
           }}
         >
-          Donate now!
+          Trade now!
         </button>
 
         <br

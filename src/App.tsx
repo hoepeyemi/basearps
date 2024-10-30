@@ -35,6 +35,16 @@ const Basearpsveri = () => {
   return null; // or return a loading spinner if needed
 };
 
+const Basearpsagri = () => {
+  React.useEffect(() => {
+    window.open('https://basedagri.vercel.app', '_blank');
+    // Optionally navigate back to home page
+    window.location.href = '/';
+  }, []);
+  
+  return null; // or return a loading spinner if needed
+};
+
 
 function App() {
 
@@ -54,6 +64,7 @@ function App() {
             <Route path="/needy" element={<Basearpsveri />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/verify" element={<BasearpsID />} />
+            <Route path="/basearpsagri" element={<Basearpsagri />} />
           </Routes>
         </Router>
           <ToastContainer autoClose={3000} draggableDirection="x" />
