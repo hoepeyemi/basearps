@@ -31,22 +31,24 @@ const GameInfo: React.FC<GameInfoProps> = ({
     }}
   >
     <div className="game">
-      <p className="game_title">About</p>
+      <p className="game_title">Basearps ID</p>
       <p className="game_cont">
-      “Rock paper scissors” is a simple and interesting game. Many of us used to play it in a school to resolve disputes or just to spend some time. But how to play if your friends are far away? For this reason 
-      rpsgame was created. It allows you to play with friends any time you want.
+      “Wait, Do you know you can have a reusable identity online that anyone can use to verify you easily?
+      Either you are a farmer, a student, a worker, a business owner, a freelancer, a professional, a retiree, a child, a teenager, a young adult, a middle-aged adult, or an elderly person, you can have a reusable identity online that anyone can use to verify you easily.
+      Curious? Click verify me!
       </p>
 
       <button
-        className="btn"
-        style={{
-          margin: "auto",
-        }}
-        onClick={() => {
-          navigate("/play");
-        }}
-      >
-        Play Now
+          className="btn"
+          style={{
+            margin: "auto",
+            color: "black",
+          }}
+          onClick={() => {
+            navigate("/verify");
+          }}
+        >
+          Verify me!
         </button>
 
         <br
@@ -59,12 +61,12 @@ const GameInfo: React.FC<GameInfoProps> = ({
       </div>
 
       <div className="game">
-        <p className="game_title">What are the rules?</p>
+        <p className="game_title">Are you a Philantropist or you love to help the needy??</p>
         <p className="game_cont">
-          The rules are very simple and probably you remember them from your
-          childhood:
+          At Basearps, we believe in the power of giving. We are a community-driven platform that allows you to donate to verified needy people and organizations.
+          That is why we have a Ecommerce section where you can donate to verified needy people and organizations.
         </p>
-        <ul
+        {/* <ul
           style={{
             width: "fit-content",
             margin: "40px auto ",
@@ -83,15 +85,16 @@ const GameInfo: React.FC<GameInfoProps> = ({
             If you choose Paper, you will win against Rock but lose against
             Scissors.
           </li>
-        </ul>
+        </ul> */}
 
         <button
           className="btn"
           style={{
             margin: "auto",
+            color: "black",
           }}
           onClick={() => {
-            navigate("/play");
+            navigate("/needy");
           }}
         >
           Play Now
@@ -159,9 +162,10 @@ const GameInfo: React.FC<GameInfoProps> = ({
           className="btn"
           style={{
             margin: "auto",
+            color: "black",
           }}
           onClick={() => {
-            navigate("/google");
+            navigate("/basearpsveri");
           }}
         >
           Donate now!

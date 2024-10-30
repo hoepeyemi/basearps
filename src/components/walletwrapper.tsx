@@ -48,7 +48,7 @@ export default function WalletWrapper({
           <WalletDropdownLink icon="wallet" href="https://wallet.coinbase.com">
             Go to Wallet Dashboard
           </WalletDropdownLink>
-          <WalletDropdownFundLink />
+          {/* <WalletDropdownFundLink /> */}
           <WalletDropdownDisconnect />
         </WalletDropdown>
       </Wallet>

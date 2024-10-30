@@ -7,6 +7,9 @@ import { base, baseSepolia } from 'viem/chains';
 import { WagmiProvider } from 'wagmi';
 import { NEXT_PUBLIC_CDP_API_KEY } from '../src/config';
 import { useWagmiConfig } from '../src/wagmi';
+import '@coinbase/onchainkit/styles.css';
+import '@rainbow-me/rainbowkit/styles.css';
+
 
 type Props = { children: ReactNode };
 

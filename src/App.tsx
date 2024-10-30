@@ -14,7 +14,18 @@ import React from "react";
 import OnchainProviders from './OnchainProviders'; 
 
 
-const GoogleRedirect = () => {
+const BasearpsID = () => {
+  React.useEffect(() => {
+    window.open('https://basearpsid.vercel.app', '_blank');
+    // Optionally navigate back to home page
+    window.location.href = '/';
+  }, []);
+  
+  return null; // or return a loading spinner if needed
+};
+
+
+const Basearpsveri = () => {
   React.useEffect(() => {
     window.open('https://basearpsveri.vercel.app', '_blank');
     // Optionally navigate back to home page
@@ -23,6 +34,7 @@ const GoogleRedirect = () => {
   
   return null; // or return a loading spinner if needed
 };
+
 
 function App() {
 
@@ -39,8 +51,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/game" element={<Game />} />
             <Route path="/play" element={<Play />} />
+            <Route path="/needy" element={<Basearpsveri />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
-            <Route path="/google" element={<GoogleRedirect />} />
+            <Route path="/verify" element={<BasearpsID />} />
           </Routes>
         </Router>
           <ToastContainer autoClose={3000} draggableDirection="x" />

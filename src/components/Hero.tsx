@@ -35,6 +35,10 @@ Resolve it online!
 
         <button
           className="btn"
+          style={{
+            margin: "auto",
+            color: "black",
+          }}
           onClick={() => {
             navigate("/play");
           }}

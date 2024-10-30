@@ -41,6 +41,7 @@ export default function WalletComponents({
       <Address />
       <EthBalance />
     </Identity>
+    <WalletDropdownFundLink />
     <WalletDropdownBasename />
 
     <WalletDropdownLink 
@@ -49,13 +50,13 @@ export default function WalletComponents({
     >
       Wallet
     </WalletDropdownLink>
-    <WalletDropdownFundLink />
+    {/* <WalletDropdownFundLink /> */}
 
     <WalletDropdownDisconnect />
   </WalletDropdown>
 </Wallet>
 {/* <LoginButton /> */}
-<ConnectWallet />
+{/* <ConnectWallet /> */}
     </>
   );
 }
